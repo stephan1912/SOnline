@@ -1,0 +1,126 @@
+.gridSeriale{
+    display: grid;
+    width: 100%;
+    margin-left: 0;
+    background-color: var(--blueGrey);
+    height: 100%;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.boxSerial{
+    display: grid;
+    width: 185px;
+    height: 320px;
+    border:2px solid var(--black);
+    grid-template-areas: 'imagine' 'text';
+}
+
+.boxSerial:hover{
+    border:2px solid var(--red);
+    cursor: pointer;
+}
+
+.containerNrPagina1{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    width: 100%;
+    background-color: var(--blueGrey);
+    text-align: center;
+}
+
+.containerNrPagina{
+    width:auto;
+    display:inline-block;
+    margin-left:auto;
+    margin-right: auto;
+}
+.containerNrPagina  a{
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;;
+    background-color: var(--black);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.searchContainer{
+    padding: 5px 0px ;
+    display: flex;
+    width: 100%;
+    background-color: var(--blueGrey);
+    text-align: center;
+}
+
+.searchContainer > input{
+    flex:1;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: var(--grey);
+    border: 2px solid var(--black);
+    color:white;
+}
+
+.searchContainer > button{
+    flex-basis: auto;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: var(--grey);
+    border: 2px solid var(--black);
+    color:white;
+}
+
+
+.searchContainer > button:hover{
+    background-color: var(--black);
+    color:var(--red);
+}
+
+.paginaCurenta{
+    background-color: black !important;
+    color: var(--red) !important;
+}
+
+.containerNrPagina  a:hover{
+    background-color: black;
+    color: var(--red);
+}
+
+
+.imagineSerial{
+    grid-area: imagine;
+}
+
+.textSerial{
+    grid-area: text;
+}
+
+@media only screen and (max-width: 1020px) {
+    .gridSeriale{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .gridSeriale{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .gridSeriale{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .gridSeriale{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,65 @@
+.table-serial {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table-serial th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  .table-serial tr{
+      
+    background-color: var(--blueGrey);
+  }
+  
+  .table-serial tr:nth-child(even){
+      background-color: var(--grey)
+    }
+  
+  .table-serial th {
+    background-color: var(--black);
+    color: var(--red);
+  }
+
+.li-sezon{
+    list-style-type: none;
+    padding:5px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: var(--black);
+    color: white;
+}
+
+.hiddenColumn{
+    display: table-cell;
+}
+
+@media only screen and (max-width: 410px) {
+    .hiddenColumn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .li-sezon{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+  .collapseBtn{
+      display: inline-block;
+      float: right;
+      border: none;
+      background-color: var(--red);
+      color: white;
+      width: 25px;
+      height: 28px;;
+  }
+
+  .collapseBtn:hover{
+      background-color: var(--red);
+      color: var(--black);
+  }
