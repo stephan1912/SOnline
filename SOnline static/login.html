@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost/fsonline/login.php -->
+<html lang="ro"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./login_files/font-awesome.min.css">
+        <link rel="stylesheet" href="./login_files/navbar.css">
+        <link rel="stylesheet" href="./login_files/style.css">
+        <title>SOnline</title>
+    </head>
+    <body>
+        
+
+<nav class="navbar" id="navigationBar">
+  <span class="navbar-toggle" id="js-navbar-toggle">
+    <i class="fa fa-bars"></i>
+  </span>
+  <a href="index.html#" class="logo">SOnline</a>
+  <ul class="main-nav" id="js-menu">
+    <li>
+      <a href="index.html" class="tabActiv">Acasa</a>
+    </li>
+
+    <li>
+      <a href="seriale.html" class="nav-links">Seriale</a>
+    </li>
+
+    <li>
+      <a href="listamea.html" class="nav-links">Lista mea</a>
+    </li>
+          <li>
+        <a href="login.html" class="nav-links">Intra in Cont</a>
+      </li>
+      </ul>
+<script src="./login_files/necesare.js.download"></script>
+</nav>
+        <div id="pageContent" class="contentBox">
+            <div style="width:350px;margin-left:auto;margin-right:auto;margin-top:50px;">
+                <header>
+                    <button class="fs_button_activ" style="display:inline-block;" id="btnArataLogin">
+                        Autentificare
+                    </button>
+                    <button class="fs_button" style="display:inline-block;" id="btnArataRegister">
+                        Inregistrare
+                    </button>
+                </header>
+                <form id="formLogin" method="POST" style="margin-top:10px;">
+                    <table>
+                        <tbody><tr>
+                            <td>
+                                <label>Nume utilizator:</label>
+                            </td>
+                            <td>
+                                <input class="fs_input" name="numeLogin">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Parola:</label>
+                            </td>
+                            <td>
+                                <input type="password" class="fs_input" name="passLogin">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Conectare" class="fs_button" name="btnLogin">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </form>
+                <form id="formRegister" method="post" style="display:none;margin-top:10px;">
+                <table>
+                        <tbody><tr>
+                            <td>
+                                <label>Nume utilizator:</label>
+                            </td>
+                            <td>
+                                <input class="fs_input" name="numeReg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>E-mail:</label>
+                            </td>
+                            <td>
+                                <input class="fs_input" name="emailReg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Parola:</label>
+                            </td>
+                            <td>
+                                <input type="password" class="fs_input" name="passReg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Creeaza cont" class="fs_button" name="btnRegister">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </form>
+                            </div>
+        </div>
+        <script src="./login_files/login.js.download"></script>
+    
+</body></html>
